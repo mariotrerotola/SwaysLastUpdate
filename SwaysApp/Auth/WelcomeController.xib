@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeController" customModule="SwaysApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="NZT-l0-krY" customClass="WelcomeController" customModule="SwaysApp" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="6lG-8M-t41">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've already an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-tI-xWG">
+                        <rect key="frame" x="40" y="624" width="174" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="xD8-wp-fDL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSy-sC-s0y">
+                        <rect key="frame" x="222" y="624" width="50" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="48Y-RD-IgX"/>
+                            <constraint firstAttribute="height" constant="23" id="WCQ-aw-hS0"/>
+                        </constraints>
+                        <state key="normal" title="Log in "/>
+                        <connections>
+                            <action selector="SignUp:" destination="NZT-l0-krY" eventType="touchUpInside" id="gSI-sI-Nqx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGh-mY-UsZ" customClass="Round_Button" customModule="SwaysApp" customModuleProvider="target">
+                        <rect key="frame" x="40" y="424" width="295" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="crL-DU-uDW"/>
+                        </constraints>
+                        <state key="normal" title="Discover ">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="LogInAction:" destination="NZT-l0-krY" eventType="touchUpInside" id="ugU-oT-JHo"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Mz9-xJ-VAs" firstAttribute="bottom" secondItem="DkW-tI-xWG" secondAttribute="bottom" constant="20" id="QVR-U9-1SC"/>
+                    <constraint firstItem="Mz9-xJ-VAs" firstAttribute="trailing" secondItem="lGh-mY-UsZ" secondAttribute="trailing" constant="40" id="VEd-0K-irb"/>
+                    <constraint firstItem="Mz9-xJ-VAs" firstAttribute="bottom" secondItem="hSy-sC-s0y" secondAttribute="bottom" constant="20" id="VyQ-km-8sm"/>
+                    <constraint firstItem="lGh-mY-UsZ" firstAttribute="leading" secondItem="Mz9-xJ-VAs" secondAttribute="leading" constant="40" id="cVo-v3-HIU"/>
+                    <constraint firstItem="DkW-tI-xWG" firstAttribute="leading" secondItem="Mz9-xJ-VAs" secondAttribute="leading" constant="40" id="dXv-jV-EfS"/>
+                    <constraint firstAttribute="trailing" secondItem="hSy-sC-s0y" secondAttribute="trailing" constant="103" id="emc-0G-Y4o"/>
+                    <constraint firstItem="hSy-sC-s0y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DkW-tI-xWG" secondAttribute="trailing" constant="8" symbolic="YES" id="gVj-ys-pje"/>
+                    <constraint firstItem="DkW-tI-xWG" firstAttribute="top" secondItem="lGh-mY-UsZ" secondAttribute="bottom" constant="160" id="tAF-Q8-DM4"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="Mz9-xJ-VAs"/>
+            </view>
+            <connections>
+                <outlet property="LogIn" destination="lGh-mY-UsZ" id="unX-mP-P87"/>
+            </connections>
+            <point key="canvasLocation" x="-714" y="279"/>
+        </viewController>
+    </objects>
+</document>

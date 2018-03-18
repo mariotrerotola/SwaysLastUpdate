@@ -1,0 +1,6 @@
+framework module Pods_SwaysAppUITests {
+  umbrella header "Pods-SwaysAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

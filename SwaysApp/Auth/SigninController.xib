@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SigninController" customModule="SwaysApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="ITI-8o-Pn8" customClass="SignInController" customModule="SwaysApp" customModuleProvider="target">
+            <view key="view" contentMode="scaleToFill" id="ePa-Zg-30K">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BQF-d5-UhC">
+                        <rect key="frame" x="40" y="80" width="295" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="bi7-id-J48"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWz-fT-e81">
+                        <rect key="frame" x="40" y="150" width="295" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ScW-Fv-AhA"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Hg-DI-u1I" customClass="Round_Button" customModule="SwaysApp" customModuleProvider="target">
+                        <rect key="frame" x="40" y="240" width="295" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Pjb-Vy-02X"/>
+                        </constraints>
+                        <state key="normal" title="Login ">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="LogInAction:" destination="ITI-8o-Pn8" eventType="touchUpInside" id="uwY-86-xSG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="9Hg-DI-u1I" firstAttribute="top" secondItem="uWz-fT-e81" secondAttribute="bottom" constant="50" id="1jc-sA-Ufd"/>
+                    <constraint firstItem="zIi-2w-7An" firstAttribute="trailing" secondItem="uWz-fT-e81" secondAttribute="trailing" constant="40" id="DgO-gT-Vjf"/>
+                    <constraint firstItem="BQF-d5-UhC" firstAttribute="leading" secondItem="zIi-2w-7An" secondAttribute="leading" constant="40" id="dZp-OW-pW3"/>
+                    <constraint firstItem="zIi-2w-7An" firstAttribute="trailing" secondItem="BQF-d5-UhC" secondAttribute="trailing" constant="40" id="jYD-KA-zl9"/>
+                    <constraint firstItem="uWz-fT-e81" firstAttribute="leading" secondItem="zIi-2w-7An" secondAttribute="leading" constant="40" id="mS3-Xt-DWa"/>
+                    <constraint firstItem="uWz-fT-e81" firstAttribute="top" secondItem="BQF-d5-UhC" secondAttribute="bottom" constant="30" id="mhT-wM-KKP"/>
+                    <constraint firstItem="zIi-2w-7An" firstAttribute="trailing" secondItem="9Hg-DI-u1I" secondAttribute="trailing" constant="40" id="vRj-v0-xth"/>
+                    <constraint firstItem="9Hg-DI-u1I" firstAttribute="leading" secondItem="zIi-2w-7An" secondAttribute="leading" constant="40" id="w3S-Sd-jtP"/>
+                    <constraint firstItem="BQF-d5-UhC" firstAttribute="top" secondItem="zIi-2w-7An" secondAttribute="top" constant="60" id="zJ7-g6-UAS"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="zIi-2w-7An"/>
+            </view>
+            <connections>
+                <outlet property="Loginbutton" destination="9Hg-DI-u1I" id="Hv5-1Q-XC8"/>
+                <outlet property="MailTextFieldIn" destination="BQF-d5-UhC" id="K1E-aK-qBB"/>
+                <outlet property="PasswordTextFieldIn" destination="uWz-fT-e81" id="VTp-Cw-Uz1"/>
+            </connections>
+            <point key="canvasLocation" x="111" y="363"/>
+        </viewController>
+    </objects>
+</document>
